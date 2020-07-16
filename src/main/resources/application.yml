@@ -62,7 +62,7 @@ spring:
         - id: bookrentalsystem
           uri: http://admin05-bookrental:8080
           predicates:
-            - Path=/bookRentalSystems/**, /bookListStatuses/**
+            - Path=/bookRentalSystems/**, /bookListStatuses/**, /blurayListStatuses/**
         - id: payment
           uri: http://admin05-payment:8080
           predicates:
