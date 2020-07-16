@@ -28,6 +28,10 @@ spring:
           uri: http://localhost:8085
           predicates:
             - Path= 
+        - id: bluraymanagement
+          uri: http://localhost:8086
+          predicates:
+            - Path=/blurayManagements/** 
       globalcors:
         corsConfigurations:
           '[/**]':
@@ -66,7 +70,11 @@ spring:
         - id: view
           uri: http://admin05-view:8080
           predicates:
-            - Path= 
+            - Path=/views/** 
+        - id: bluraymanagement
+          uri: http://admin05-bluraymanagement:8080
+          predicates:
+            - Path=/blurayManagements/** 
       globalcors:
         corsConfigurations:
           '[/**]':
